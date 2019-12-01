@@ -22,7 +22,7 @@ import { useAuth0 } from "../react-auth0-spa";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  const { user, isAuthenticated, loginWithRedirect, loginWithPopup, logout } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
 
   const logoutWithRedirect = () =>
@@ -56,7 +56,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithRedirect({})}
+                    onClick={() => loginWithPopup({})}
                   >
                     Log in
                   </Button>
@@ -84,7 +84,7 @@ const NavBar = () => {
                     </DropdownItem>
                     <DropdownItem
                       id="qsLogoutBtn"
-                      onClick={() => logoutWithRedirect()}
+                      onClick={() => loginWithPopup()}
                     >
                       <FontAwesomeIcon icon="power-off" className="mr-3" /> Log
                       out
@@ -100,7 +100,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     block
-                    onClick={() => loginWithRedirect({})}
+                    onClick={() => loginWithPopup({})}
                   >
                     Log in
                   </Button>
