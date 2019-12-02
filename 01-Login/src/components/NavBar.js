@@ -84,7 +84,7 @@ const NavBar = () => {
                     </DropdownItem>
                     <DropdownItem
                       id="qsLogoutBtn"
-                      onClick={() => loginWithPopup()}
+                      onClick={() => logoutWithRedirect()}
                     >
                       <FontAwesomeIcon icon="power-off" className="mr-3" /> Log
                       out
