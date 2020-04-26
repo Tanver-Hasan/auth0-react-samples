@@ -13,7 +13,7 @@ function createWindow() {
       preload: path.join(__dirname,"preload.js")
     }
   })
-
+  // Open developer tools
  // mainWindow.webContents.openDevTools()
 
   // and load the index.html of the app.  
