@@ -2,11 +2,13 @@
   "name": "auth0-react-01-login",
   "version": "0.1.0",
   "private": true,
+  "main":"public/main.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "el-start": "electron ."
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.0.2",
@@ -22,7 +24,9 @@
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron": "^8.2.3"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },

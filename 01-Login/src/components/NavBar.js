@@ -56,7 +56,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithPopup({})}
+                    onClick={() => loginWithRedirect({})}
                   >
                     Log in
                   </Button>
